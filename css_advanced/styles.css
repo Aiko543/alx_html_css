@@ -1,0 +1,378 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Arial', sans-serif;
+color: white;
+background-color: #000;
+}
+
+.header {
+background-image: url(images/Object.png) ; 
+height: 100vh;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 30px 60px;
+}
+
+.header::before {
+content: '';
+position: absolute;
+top: 0; left: 0; right: 0; bottom: 0;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 1;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 2;
+position: relative;
+}
+
+.navbar .logo {
+font-size: 24px;
+font-weight: bold;
+}
+
+.navbar ul {
+list-style: none;
+display: flex;
+gap: 40px;
+}
+
+.navbar ul li a {
+color: white;
+text-decoration: none;
+font-weight: 500;
+}
+
+.hero-content {
+text-align: center;
+z-index: 2;
+position: relative;
+margin-top: 80px;
+}
+
+.hero-content h1 {
+font-size: 64px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.hero-content p {
+font-size: 18px;
+letter-spacing: 3px;
+margin-bottom: 30px;
+color: #ccc;
+}
+
+.hero-content .register-btn {
+background-color: #c271ff;
+color: white;
+border: none;
+padding: 12px 30px;
+font-size: 16px;
+border-radius: 25px;
+cursor: pointer;
+}
+
+.instructors {
+display: flex;
+justify-content: center;
+gap: 60px;
+z-index: 2;
+position: relative;
+padding-bottom: 50px;
+}
+
+.instructor {
+text-align: center;
+}
+
+.instructor img {
+width: 80px;
+height: 80px;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 10px;
+}
+
+.instructor h4 {
+font-size: 16px;
+margin-bottom: 4px;
+}
+
+.instructor p {
+font-size: 14px;
+color: #aaa;
+}
+.testimonials {
+    background-color: #C271FF;
+    width: 100%;
+    height: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.testimonial_image {
+    width: 15%;
+    float: left;
+    margin-right: 30px;
+}
+.testimonial_text {
+    width: 70%;
+    float: right;
+    
+}
+.center_text{
+    text-align: center;
+}
+body {
+font-family: 'Helvetica Neue', sans-serif;
+background-color: #f9f9f9;
+margin: 0;
+padding: 0;
+}
+
+.section-title {
+text-align: center;
+font-size: 24px;
+margin: 40px 0 20px;
+color: #000;
+}
+ 
+.tutorials {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 24px;
+padding: 20px;
+}
+
+.card {
+background-color: white;
+width: 230px;
+border-radius: 12px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+transition: transform 0.3s;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+.card img {
+width: 100%;
+height: 140px;
+object-fit: cover;
+position: relative;
+}
+
+.play-button {
+position: relative;
+}
+
+.play-button::after {
+content: '▶';
+font-size: 28px;
+color: #a25aff;
+background-color:white;
+border-radius: 50%;
+padding: 12px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.card-content {
+padding: 16px;
+}
+
+.card-title {
+font-weight: bold;
+margin-bottom: 8px;
+}
+
+.card-description {
+font-size: 14px;
+color: #666;
+margin-bottom: 16px;
+}
+
+.card-footer {
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size: 13px;
+color: #888;
+}
+
+.instructor {
+color: #a25aff;
+font-weight: bold;
+}
+
+.rating {
+color: #a25aff;
+}
+
+.duration {
+font-size: 12px;
+color:#a25aff;
+}
+
+
+.free-membership {
+  background-color: #071629;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+
+}
+
+.free-membership .section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.section-title {
+  margin: 0 auto 20px;
+  color: white;
+}
+
+.memberships {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 0 10px;
+
+
+}
+
+.membership-item {
+  max-width: 180px;
+  min-width: 140px;
+  flex: 1 1 140px;
+
+
+}
+
+.membership-item img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 8px;
+}
+
+.membership-item h3 {
+  font-size: 8px;
+  margin: 12px 0 8px;
+}
+
+.membership-item p {
+  font-size: 7px;
+  color: #ccc;
+  margin: 0;
+}
+
+.register-button {
+  background-color: #a25aff;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background-color: #8e4de0;
+}
+
+.faq-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.faq-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #110e0e;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #8b8a8a;
+}
+
+footer {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left .logo img {
+  width: 100px;
+  height: auto;
+}
+
+.footer-right .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-right .social-icons a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+footer small {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.75rem;
+  color: #aaa;
+}
